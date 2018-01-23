@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Gllacy</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--<div class="content-wrapper"> -->
+  
+    <input type="radio" class="visual-hidden" id="back-togle-1" name="back-togle" value="back-1" checked>
+    <input type="radio" class="visual-hidden" id="back-togle-2" name="back-togle" value="back-2">
+    <input type="radio" class="visual-hidden" id="back-togle-3" name="back-togle" value="back-3">
+  
+  <div class="content-area">
+    <div class="slider">
+      <button class="btn slider-btn">Давайте оба!</button>
+    </div>
+    <div class="background-togle">
+      <label for="back-togle-1" class="togle-label togle-label-1"></label>  
+      <label for="back-togle-2" class="togle-label togle-label-2"></label>  
+      <label for="back-togle-3" class="togle-label togle-label-3"></label>  
+    </div>
+    <header class="main-header">
+
+      <div class="main-logo"></div>
+      <nav class="site-nav">
+        <a href="#1">Каталог</a>
+        <a href="#1">Доставка и оплата</a>
+        <a href="#1">О Компании</a>
+      </nav>
+      <nav class="user-nav">
+        <a href="#1">Найти</a>
+        <a href="#1">Вход</a>
+        <a href="#1">Пусто</a>
+        <div class="info-phone">С 10 до 20, ежедневно <span>8 812 450-25-25</span></div>  
+      </nav>
+      <!--class="content-area"-->
+    </header>
+    <section class="promo-banners">
+      <div class="promo-item">
+        <h3></h3>
+        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <a href="" class="btn">Хочу варенье!</a>
+      </div>
+      <div class="promo-item">
+        <h3></h3>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <a href="" class="btn">Хочу шоколадки!</a>
+      </div>
+    </section>
+    <section class="hit-products">
+      <div class="product-item">
+        <img src="" alt="" class="product-img">
+        <p class="product-cost"></p>
+        <p class="product-info"></p>
+      </div>
+    </section>
+    <section class="about-us">
+      <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+      <p class="us-feature">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+      <p class="us-feature">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+      <p class="us-feature">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+      <p class="us-feature">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+    </section>
+    <section class="news">
+      <div class="news-item">
+        <h3>Новое в нашем блоге</h3>
+        <a>10 способов сервировки
+        фруктовых щербетов к столу</a>
+      </div>
+      <div class="news-item subscribe">
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <input type="text" class="subscribe">
+        <button type="submit" class="btn subscribe">Отправить</button>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="map" id="map"></div>
+
+      <div class="footer-address">
+        <p>Адрес главного офиса и офлайн-магазина</p>
+        <p>
+          ул. Большая Конюшенная 19/8, Санкт-Петербург
+        </p>
+        <p>Для заказов по телефону: <span>8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
+        <button id="feedback-btn" class="btn feedback-btn" href="writeus.html">Форма обратной связи</button>
+
+        <form class="feedback" action="#1" method="post">
+          <h2>Мы обязательно вам ответим</h2>
+          <button type="button" class="close-feedback"></button>
+          <input class="name-feedback" id="name-feedback" type="text" placeholder="Как вас зовут?">
+          <input class="mail-feedback" id="mail-feedback" type="email" placeholder="Ваша почта для ответа?">
+          <textarea id="text-feedback" rows="4" placeholder="Напишите что-нибудь"></textarea>
+          <button class="btn submitBtn" type="submit">Отправить</button>
+        </form>
+      </div>
+
+
+      <div class="footer-info">
+        <div class="social-btns">
+          <a class="social-btn" href="#1">Твиттер<img src="img/svg-nerds/tvit-icon.svg" width="36" height="30" alt="ВК"></a>
+          <a class="social-btn" href="#1">ВКонтакте<img src="img/svg-nerds/vk-icon.svg" width="36" height="30" alt="ВК"></a>
+          <a class="social-btn" href="#1">FaceBook<img src="img/svg-nerds/fb-icon.svg" width="36" height="30" alt="FB"></a>
+          <a class="social-btn" href="#1">Instagram<img src="img/svg-nerds/insta-icon.svg" width="36" height="30" alt="Inst"></a>
+        </div>
+        <nav class="info-nav">
+          <a href="#1">Для поставщиков</a>
+          <a href="#1">Наши документы</a>
+          <a href="#1">О производстве</a>
+          <a href="#1">Экологические стандарты</a>
+        </nav>
+        <div class="academy-logo">
+          <img src="" alt="">
+          <p>Сделано в <a>HTML Academy</a> © 2017</p>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+<!--  </div>-->
+</body>
+</html>

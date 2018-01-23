@@ -1,0 +1,133 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.visual-hidden {
+  display: none;
+}
+
+.content-area {
+  width: 1200px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0 auto;
+  outline: 1px dashed red;
+  background-color: #849d8f;
+}
+
+.main-header {
+  display: flex;
+}
+
+.site-nav {
+  flex-grow: 1;
+}
+
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 267px;
+}
+
+.user-nav a {
+  
+  padding: 0 15px;
+  background-color: RGBA(255,255,255, 0.2);
+  text-align: center;
+  line-height: 28px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.info-phone {
+  width: 160px;
+}
+
+
+.main-logo {
+  width: 155px;
+  height: 65px;
+  background: url('../img/Logo.png') no-repeat;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.background-togle {
+  position: absolute;
+  top: 650px;
+  width: 90px;
+  height: 20px;
+  outline: 1px dashed red;
+  font-size: 0;
+  z-index: 1;
+}
+
+.togle-label {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 8px;
+  
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  
+  cursor: pointer;
+}
+
+#back-togle-1:checked~.content-area .togle-label-1,
+#back-togle-2:checked~.content-area .togle-label-2,
+#back-togle-3:checked~.content-area .togle-label-3 {
+  background: #ffffff;
+}
+
+#back-togle-2:checked~.content-area {
+  background-color: #8996a6;
+}
+
+#back-togle-3:checked~.content-area {
+  background-color: #9d8b84;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -522px;
+  height: 855px;
+  width: 1045px;
+  
+  background-image: url('../img/cream.png'), url('../img/malin.png'), url('../img/liting-1.png');
+  background-position: 30%, 60%, 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#back-togle-2:checked~.content-area .slider {
+  background-image: url('../img/chokolad.png'), url('../img/lime.png'), url('../img/liting-22.png');
+  background-position: 30%, 60%;
+  background-repeat: no-repeat;
+}
+
+#back-togle-3:checked~.content-area .slider {
+  background-image: url('../img/ice.png'), url('../img/strawberry.png'), url('../img/liting-3.png');
+  background-position: 30%, 60%, 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.promo-banners {
+  margin-top: 650px;
+}
